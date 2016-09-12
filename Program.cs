@@ -516,6 +516,10 @@ Master in Information Technology Management
             }
         }
 
+        /// <summary>
+        /// Insert a person into mongodb database 'foo' with collection 'parsons'
+        /// </summary>
+        /// <returns>void</returns>
         public static void InsertParsons() {
             try
             {
