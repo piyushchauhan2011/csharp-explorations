@@ -17,6 +17,7 @@ using MongoDB.Bson;
 using Newtonsoft.Json;
 using System.Collections;
 using System.Xml.Linq;
+using System.Net.Sockets;
 // using CsvHelper;
 // using NetMQ.Sockets;
 // using NetMQ;
@@ -486,6 +487,10 @@ Master in Information Technology Management
             // }
 
             Console.WriteLine(expr.ToJson());
+
+            var listener = new TcpListener(IPAddress.Loopback, 5555);
+            // listener.Start(); // Not joined with main thread, have to join it
+            // Console.WriteLine("Listening on Port 5555");
         }
 
         public static void DisplayBits(BitArray bits) {
