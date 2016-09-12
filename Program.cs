@@ -23,6 +23,7 @@ using System.Net.Sockets;
 // using NetMQ;
 // using System.Threading;
 // using StackExchange.Redis;
+// using Npgsql;
 
 namespace ConsoleApplication
 {
@@ -491,6 +492,13 @@ Master in Information Technology Management
             var listener = new TcpListener(IPAddress.Loopback, 5555);
             // listener.Start(); // Not joined with main thread, have to join it
             // Console.WriteLine("Listening on Port 5555");
+
+            // using (var conn = new NpgsqlConnection("Host=localhost;Username=piyushchauhan;Password=;Database=piyushchauhan")) {
+            //     conn.Open();
+
+            //     conn.Close();
+            // }
+
         }
 
         public static void DisplayBits(BitArray bits) {
