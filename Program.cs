@@ -222,7 +222,7 @@ namespace ConsoleApplication
 
             Console.WriteLine($"fact: {factorial(10)}");
 
-            ImmutableArray<int> im = ImmutableArray.Create<int>(1, 2, 3);
+            var im = ImmutableArray.Create<int>(1, 2, 3);
             var rs = im.Add(4);
             // original not modified
             foreach (var m in im)
@@ -275,8 +275,8 @@ Master in Information Technology Management
 
             int[] values = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             int[] percentages = { 30, 60, 10 };
-            List<IEnumerable<int>> distributions = new List<IEnumerable<int>>();
-            int[] numbersOfItems = percentages.Select(n => (int)Math.Floor((double)values.Length * n / 100)).ToArray();
+            var distributions = new List<IEnumerable<int>>();
+            var numbersOfItems = percentages.Select(n => (int)Math.Floor((double)values.Length * n / 100)).ToArray();
             Console.WriteLine($"values Average is : {values.Average()}");
             foreach (var dist in distributions)
             {
@@ -343,8 +343,8 @@ Master in Information Technology Management
             Console.WriteLine(fi.Attributes);
             Console.WriteLine(fi.CreationTime);
 
-            BorderSide topSide = BorderSide.Top;
-            bool isTop = (topSide == BorderSide.Top);
+            var topSide = BorderSide.Top;
+            var isTop = (topSide == BorderSide.Top);
 
             var r = Enumerable.Range(4, 10);
             r.ToList().ForEach(m => Console.Write($"{m}, "));
@@ -363,8 +363,8 @@ Master in Information Technology Management
             handler("Piyush");
 
             var pub = new Publisher();
-            Subscriber sub1 = new Subscriber("sub1", pub);
-            Subscriber sub2 = new Subscriber("sub2", pub);
+            var sub1 = new Subscriber("sub1", pub);
+            var sub2 = new Subscriber("sub2", pub);
 
             pub.DoSomething();
 
