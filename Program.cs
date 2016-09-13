@@ -387,7 +387,7 @@ Master in Information Technology Management
             // }
 
             // StartBackgroundWork();
-            
+
             // RunMongo();
 
             // new FileStream("test.txt", FileMode.Create);
@@ -441,7 +441,8 @@ Master in Information Technology Management
             var names10 = new string[] { "Harry", "Mary", "Jay" };
             var names11 = new string[] { "Mary", "Jay" };
 
-            foreach(var n in names10.Except(names11)) {
+            foreach (var n in names10.Except(names11))
+            {
                 Console.Write($"{n} ");
             }
 
@@ -450,7 +451,7 @@ Master in Information Technology Management
             person1.LastName = "Chauhan";
             person1.Age = 25;
             person1.Occupation = "Software Engineer";
-            
+
             string output = JsonConvert.SerializeObject(person1);
             Console.WriteLine(output);
 
@@ -476,11 +477,12 @@ Master in Information Technology Management
 
             var xmlCategories = XElement.Load("Categories.xml");
             var expr = from xc in xmlCategories.Elements("Category")
-                       select new {
+                       select new
+                       {
                            Name = xc.Attribute("Name").Value,
                            Description = xc.Attribute("Description").Value
                        };
-            
+
             // foreach (var xc in xmlCategories.Elements("Category")) {
             //     var xcName = xc.Attribute("Name").Value;
             //     var xcDesc = xc.Attribute("Description").Value;
@@ -501,13 +503,16 @@ Master in Information Technology Management
 
         }
 
-        public static void DisplayBits(BitArray bits) {
-            foreach (bool bit in bits) {
+        public static void DisplayBits(BitArray bits)
+        {
+            foreach (bool bit in bits)
+            {
                 Console.Write(bit ? 1 : 0);
             }
         }
 
-        public static void FindParsons() {
+        public static void FindParsons()
+        {
             try
             {
                 var client = new MongoClient();
@@ -517,7 +522,7 @@ Master in Information Technology Management
 
                 var doc = collection.Find(p => p.Name == "Piyush");
                 Console.WriteLine(doc.ToString());
-            } 
+            }
             catch (MongoClientException e)
             {
                 Console.WriteLine(e);
@@ -528,7 +533,8 @@ Master in Information Technology Management
         /// Insert a person into mongodb database 'foo' with collection 'parsons'
         /// </summary>
         /// <returns>void</returns>
-        public static void InsertParsons() {
+        public static void InsertParsons()
+        {
             try
             {
                 var client = new MongoClient();
@@ -547,7 +553,7 @@ Master in Information Technology Management
                 var document = parson.ToBsonDocument();
 
                 collection.InsertOne(document);
-            } 
+            }
             catch (MongoClientException e)
             {
                 Console.WriteLine(e);
@@ -576,7 +582,8 @@ Master in Information Technology Management
             public string Name { get; set; }
         }
 
-        public static void RunMongo() {
+        public static void RunMongo()
+        {
             try
             {
                 var client = new MongoClient();
