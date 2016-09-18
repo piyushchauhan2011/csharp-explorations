@@ -27,6 +27,7 @@ using System.Net.Sockets;
 using System.Runtime.InteropServices;
 using Amqp;
 using RabbitMQ.Client;
+using MySql.Data.MySqlClient;
 
 namespace ConsoleApplication
 {
@@ -165,6 +166,23 @@ namespace ConsoleApplication
             await connection.CloseAsync();
         }
 
+        static void MySqlTest() {
+            var connectionString = "server=localhost;userid=root;pwd=root;port=3306;database=test;sslmode=none;";
+            var mConn = new MySqlConnection(connectionString);
+
+            try
+            {
+                Console.WriteLine("Connecting to MySQL...");
+                mConn.Open();
+                // Perform database operations
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.ToString());
+            }
+            mConn.Close();
+            Console.WriteLine("Done.");
+        }
         static void RabbitMQRun()
         {
             var factory = new RabbitMQ.Client.ConnectionFactory() { HostName = "localhost" };
@@ -196,6 +214,7 @@ namespace ConsoleApplication
         {
 
             // RabbitMQRun(); // brew install rabbitmq && rabbitmq-server
+            // MySqlTest();
 
             // Invoke the function and get the process ID.
             int pid = getpid();
