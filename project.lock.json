@@ -3,6 +3,36 @@
   "version": 2,
   "targets": {
     ".NETCoreApp,Version=v1.0": {
+      "AMQPNetLite/1.2.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections": "4.0.11",
+          "System.Collections.Concurrent": "4.0.12",
+          "System.Collections.NonGeneric": "4.0.0",
+          "System.Diagnostics.Tools": "4.0.0",
+          "System.Net.NameResolution": "4.0.0",
+          "System.Net.Security": "4.0.0",
+          "System.Net.Sockets": "4.1.0",
+          "System.Reflection": "4.1.0",
+          "System.Reflection.Emit.Lightweight": "4.0.0",
+          "System.Reflection.Extensions": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Runtime.Serialization.Primitives": "4.1.0",
+          "System.Security.Claims": "4.0.1",
+          "System.Security.Principal": "4.0.1",
+          "System.Threading": "4.0.11",
+          "System.Threading.Tasks": "4.0.11",
+          "System.Threading.Thread": "4.0.0",
+          "System.Threading.ThreadPool": "4.0.10",
+          "System.Threading.Timer": "4.0.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/Amqp.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Amqp.dll": {}
+        }
+      },
       "AsyncIO/0.1.26": {
         "type": "package",
         "dependencies": {
@@ -955,6 +985,32 @@
         },
         "runtime": {
           "lib/netstandard1.0/NuGet.Versioning.dll": {}
+        }
+      },
+      "RabbitMQ.Client/4.1.0-rc2": {
+        "type": "package",
+        "dependencies": {
+          "System.Collections.Concurrent": "4.0.12",
+          "System.Console": "4.0.0",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.Linq": "4.1.0",
+          "System.Net.NameResolution": "4.0.0",
+          "System.Net.Security": "4.0.0",
+          "System.Net.Sockets": "4.1.0",
+          "System.Reflection.Extensions": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11",
+          "System.Threading.Thread": "4.0.0",
+          "System.Threading.Timer": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard1.5/RabbitMQ.Client.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/RabbitMQ.Client.dll": {}
         }
       },
       "Remotion.Linq/2.1.1": {
@@ -2749,7 +2805,7 @@
           "System.Security.Principal": "4.0.1"
         },
         "compile": {
-          "ref/netstandard1.3/_._": {}
+          "ref/netstandard1.3/System.Security.Claims.dll": {}
         },
         "runtime": {
           "lib/netstandard1.3/System.Security.Claims.dll": {}
@@ -3563,6 +3619,64 @@
     }
   },
   "libraries": {
+    "AMQPNetLite/1.2.0": {
+      "sha512": "BT/6wY6F50WIsH1TUBeAH0BrBhKKHuACDX62t/acOJmiT24biOMmvInNXc58xuag04n/tDlpbUFvPz3Fwtxk9g==",
+      "type": "package",
+      "path": "AMQPNetLite/1.2.0",
+      "files": [
+        "AMQPNetLite.1.2.0.nupkg.sha512",
+        "AMQPNetLite.nuspec",
+        "lib/net-cf/Amqp.NetCF39.XML",
+        "lib/net-cf/Amqp.NetCF39.dll",
+        "lib/net-cf/Amqp.NetCF39.pdb",
+        "lib/net35/Amqp.Net35.XML",
+        "lib/net35/Amqp.Net35.dll",
+        "lib/net35/Amqp.Net35.pdb",
+        "lib/net40/Amqp.Net.XML",
+        "lib/net40/Amqp.Net.dll",
+        "lib/net40/Amqp.Net.dll.config",
+        "lib/net40/Amqp.Net.pdb",
+        "lib/net45/Amqp.Net.XML",
+        "lib/net45/Amqp.Net.dll",
+        "lib/net45/Amqp.Net.pdb",
+        "lib/netcore451/Amqp.NetCore.XML",
+        "lib/netcore451/Amqp.NetCore.dll",
+        "lib/netcore451/Amqp.NetCore.pdb",
+        "lib/netmf42/Amqp.NetMF.XML",
+        "lib/netmf42/Amqp.NetMF.dll",
+        "lib/netmf42/Amqp.NetMF.pdb",
+        "lib/netmf42/be/Amqp.NetMF.pdbx",
+        "lib/netmf42/be/Amqp.NetMF.pe",
+        "lib/netmf42/le/Amqp.NetMF.pdbx",
+        "lib/netmf42/le/Amqp.NetMF.pe",
+        "lib/netmf43/Amqp.NetMF.XML",
+        "lib/netmf43/Amqp.NetMF.dll",
+        "lib/netmf43/Amqp.NetMF.pdb",
+        "lib/netmf43/be/Amqp.NetMF.pdbx",
+        "lib/netmf43/be/Amqp.NetMF.pe",
+        "lib/netmf43/le/Amqp.NetMF.pdbx",
+        "lib/netmf43/le/Amqp.NetMF.pe",
+        "lib/netmf44/Amqp.NetMF.XML",
+        "lib/netmf44/Amqp.NetMF.dll",
+        "lib/netmf44/Amqp.NetMF.pdb",
+        "lib/netmf44/be/Amqp.NetMF.pdbx",
+        "lib/netmf44/be/Amqp.NetMF.pe",
+        "lib/netmf44/le/Amqp.NetMF.pdbx",
+        "lib/netmf44/le/Amqp.NetMF.pe",
+        "lib/netstandard1.3/Amqp.dll",
+        "lib/netstandard1.3/Amqp.pdb",
+        "lib/netstandard1.3/Amqp.xml",
+        "lib/windows8/Amqp.Store.XML",
+        "lib/windows8/Amqp.Store.dll",
+        "lib/windows8/Amqp.Store.pdb",
+        "lib/windowsphone8/Amqp.WP.XML",
+        "lib/windowsphone8/Amqp.WP.dll",
+        "lib/windowsphone8/Amqp.WP.pdb",
+        "lib/wpa81/Amqp.NetCore.XML",
+        "lib/wpa81/Amqp.NetCore.dll",
+        "lib/wpa81/Amqp.NetCore.pdb"
+      ]
+    },
     "AsyncIO/0.1.26": {
       "sha512": "mV6fvJg4K/kN6xzQ1sJJNzk7L8W0hKYxm2enGgi0cUs81v5S5JWfJF+M+KoyfmhUNNhy1nDcS4ycru8pBOFGyw==",
       "type": "package",
@@ -4387,6 +4501,17 @@
         "lib/net45/NuGet.Versioning.xml",
         "lib/netstandard1.0/NuGet.Versioning.dll",
         "lib/netstandard1.0/NuGet.Versioning.xml"
+      ]
+    },
+    "RabbitMQ.Client/4.1.0-rc2": {
+      "sha512": "IJe7YwqKhlB7BKAEZk4UQKkjnX5c1V3nHAWr+78X5Hj9y33ITIXTDRiezT2J0ch53AXnBifOEMo9Oi2bVyt+Ng==",
+      "type": "package",
+      "path": "RabbitMQ.Client/4.1.0-rc2",
+      "files": [
+        "RabbitMQ.Client.4.1.0-rc2.nupkg.sha512",
+        "RabbitMQ.Client.nuspec",
+        "lib/net451/RabbitMQ.Client.dll",
+        "lib/netstandard1.5/RabbitMQ.Client.dll"
       ]
     },
     "Remotion.Linq/2.1.1": {
@@ -9838,6 +9963,7 @@
   },
   "projectFileDependencyGroups": {
     "": [
+      "AMQPNetLite >= 1.2.0",
       "CsvHelper >= 3.0.0-beta4",
       "Microsoft.Reactive.Testing >= 3.0.0",
       "MongoDB.Bson >= 2.3.0-rc1",
@@ -9846,6 +9972,7 @@
       "NetMQ >= 4.0.0-rc5",
       "Newtonsoft.Json >= 9.0.1-beta1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 1.0.1",
+      "RabbitMQ.Client >= 4.1.0-rc2",
       "StackExchange.Redis >= 1.1.605",
       "System.Reactive >= 3.0.0",
       "System.Reactive.Core >= 3.0.0",

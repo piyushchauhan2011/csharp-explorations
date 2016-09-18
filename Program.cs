@@ -25,6 +25,8 @@ using System.Net.Sockets;
 // using StackExchange.Redis;
 // using Npgsql;
 using System.Runtime.InteropServices;
+using Amqp;
+using RabbitMQ.Client;
 
 namespace ConsoleApplication
 {
@@ -141,15 +143,65 @@ namespace ConsoleApplication
             return people;
         }
 
+        static async Task Run()
+        {
+            string address = "amqp://guest:guest@localhost:5672";
+
+            Connection connection = await Connection.Factory.CreateAsync(new Address(address));
+            Session session = new Session(connection);
+            SenderLink sender = new SenderLink(session, "test-sender", "q1");
+
+            Message message1 = new Message("Hello AMQP!");
+            await sender.SendAsync(message1);
+
+            ReceiverLink receiver = new ReceiverLink(session, "test-receiver", "q1");
+            Message message2 = await receiver.ReceiveAsync();
+            Console.WriteLine(message2.GetBody<string>());
+            receiver.Accept(message2);
+
+            await sender.CloseAsync();
+            await receiver.CloseAsync();
+            await session.CloseAsync();
+            await connection.CloseAsync();
+        }
+
+        static void RabbitMQRun()
+        {
+            var factory = new RabbitMQ.Client.ConnectionFactory() { HostName = "localhost" };
+            using (var connection = factory.CreateConnection())
+            using (var channel = connection.CreateModel())
+            {
+                channel.QueueDeclare(queue: "hello",
+                                    durable: false,
+                                    exclusive: false,
+                                    autoDelete: false,
+                                    arguments: null);
+
+                string message = "Hello World!";
+                var body = Encoding.UTF8.GetBytes(message);
+
+                channel.BasicPublish(exchange: "",
+                                    routingKey: "hello",
+                                    basicProperties: null,
+                                    body: body);
+                Console.WriteLine(" [x] Sent {0}", message);
+            }
+        }
+
         // Import the libc and define the method corresponding to the native function.
         [DllImport("libSystem.dylib")]
         private static extern int getpid();
 
         public static void Main(string[] args)
         {
+
+            // RabbitMQRun(); // brew install rabbitmq && rabbitmq-server
+
             // Invoke the function and get the process ID.
             int pid = getpid();
             Console.WriteLine(pid);
+
+            // Run().Wait(); // AMQP # brew install activemq && activemq start
 
             Console.WriteLine("Hello World!");
             string name = "Piyush Chauhan";
@@ -510,7 +562,6 @@ Master in Information Technology Management
 
             //     conn.Close();
             // }
-
         }
 
         public static void DisplayBits(BitArray bits)

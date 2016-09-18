@@ -20,7 +20,9 @@
     "Newtonsoft.Json": "9.0.1-beta1",
     "CsvHelper": "3.0.0-beta4",
     "StackExchange.Redis": "1.1.605",
-    "Npgsql.EntityFrameworkCore.PostgreSQL": "1.0.1"
+    "Npgsql.EntityFrameworkCore.PostgreSQL": "1.0.1",
+    "AMQPNetLite": "1.2.0",
+    "RabbitMQ.Client": "4.1.0-rc2"
   },
   "frameworks": {
     "netcoreapp1.0": {
