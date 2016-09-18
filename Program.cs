@@ -24,6 +24,7 @@ using System.Net.Sockets;
 // using System.Threading;
 // using StackExchange.Redis;
 // using Npgsql;
+using System.Runtime.InteropServices;
 
 namespace ConsoleApplication
 {
@@ -139,8 +140,17 @@ namespace ConsoleApplication
 
             return people;
         }
+
+        // Import the libc and define the method corresponding to the native function.
+        [DllImport("libSystem.dylib")]
+        private static extern int getpid();
+
         public static void Main(string[] args)
         {
+            // Invoke the function and get the process ID.
+            int pid = getpid();
+            Console.WriteLine(pid);
+
             Console.WriteLine("Hello World!");
             string name = "Piyush Chauhan";
             int a = 23;
