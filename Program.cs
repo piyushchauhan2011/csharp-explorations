@@ -28,6 +28,7 @@ using System.Runtime.InteropServices;
 using Amqp;
 using RabbitMQ.Client;
 using MySql.Data.MySqlClient;
+using Nest;
 
 namespace ConsoleApplication
 {
@@ -166,7 +167,8 @@ namespace ConsoleApplication
             await connection.CloseAsync();
         }
 
-        static void MySqlTest() {
+        static void MySqlTest()
+        {
             var connectionString = "server=localhost;userid=root;pwd=root;port=3306;database=test;sslmode=none;";
             var mConn = new MySqlConnection(connectionString);
 
@@ -209,6 +211,45 @@ namespace ConsoleApplication
         // Import the libc and define the method corresponding to the native function.
         [DllImport("libSystem.dylib")]
         private static extern int getpid();
+
+        private class Tweet
+        {
+            public int Id;
+            public string User;
+            public DateTime PostDate;
+            public string Message;
+        }
+
+        static void eSearch()
+        {
+            // Docs: https://github.com/elastic/elasticsearch-net
+            var node = new Uri("http://localhost:9200");
+            var settings = new ConnectionSettings(node);
+            var client = new ElasticClient(settings);
+
+            var tweet = new Tweet
+            {
+                Id = 1,
+                User = "kimchy",
+                PostDate = new DateTime(2009, 11, 15),
+                Message = "Trying out NEST, so far so good?"
+            };
+
+            var response = client.Index(tweet, idx => idx.Index("mytweetindex"));
+            // var response = client.IndexAsync(tweet, idx => idx.Index("mytweetindex"));
+
+            var cg = client.Get<Tweet>(1, idx => idx.Index("mytweetindex")); // returns an IGetResponse mapped 1-to-1 with the Elasticsearch JSON response
+            var tw = cg.Source; // the original document
+
+            var rp = client.Search<Tweet>(s => s
+                .From(0)
+                .Size(10)
+                .Query(q =>
+                        q.Term(t => t.User, "kimchy")
+                        || q.Match(mq => mq.Field(f => f.User).Query("nest"))
+                    )
+                );
+        }
 
         public static void Main(string[] args)
         {

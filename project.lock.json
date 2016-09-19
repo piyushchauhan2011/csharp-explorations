@@ -74,6 +74,24 @@
           "lib/netcoreapp1.0/dotnet-test-xunit.dll": {}
         }
       },
+      "Elasticsearch.Net/2.4.5": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.0.1",
+          "NETStandard.Library": "1.6.0",
+          "System.Collections.Specialized": "4.0.1",
+          "System.ComponentModel.TypeConverter": "4.1.0",
+          "System.Dynamic.Runtime": "4.0.11",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Runtime.Serialization.Primitives": "4.1.1"
+        },
+        "compile": {
+          "lib/netstandard1.3/Elasticsearch.Net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Elasticsearch.Net.dll": {}
+        }
+      },
       "Google.Protobuf/3.0.0": {
         "type": "package",
         "dependencies": {
@@ -929,6 +947,23 @@
         },
         "runtime": {
           "lib/netstandard1.6/MySql.Data.EntityFrameworkCore.dll": {}
+        }
+      },
+      "NEST/2.4.5": {
+        "type": "package",
+        "dependencies": {
+          "Elasticsearch.Net": "2.4.5",
+          "NETStandard.Library": "1.6.0",
+          "Newtonsoft.Json": "[9.0.0, 10.0.0)",
+          "System.Collections.Specialized": "4.0.1",
+          "System.Linq.Queryable": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/Nest.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Nest.dll": {}
         }
       },
       "NetMQ/4.0.0-rc5": {
@@ -4055,6 +4090,26 @@
         "runtimes/win7-x86/lib/net451/dotnet-test-xunit.exe"
       ]
     },
+    "Elasticsearch.Net/2.4.5": {
+      "sha512": "WjVO+4bazqN3jDE6k3s5bSKUn+RrH0NdxVo7wElCKGwt7Jopz2bw8NjCsZb8uw5p7den10VGrTqR6Tt0YZo25g==",
+      "type": "package",
+      "path": "Elasticsearch.Net/2.4.5",
+      "files": [
+        "Elasticsearch.Net.2.4.5.nupkg.sha512",
+        "Elasticsearch.Net.nuspec",
+        "lib/net45/Elasticsearch.Net.XML",
+        "lib/net45/Elasticsearch.Net.dll",
+        "lib/net45/Elasticsearch.Net.pdb",
+        "lib/net45/Elasticsearch.Net.pdb.srcsrv",
+        "lib/net46/Elasticsearch.Net.XML",
+        "lib/net46/Elasticsearch.Net.dll",
+        "lib/net46/Elasticsearch.Net.pdb",
+        "lib/net46/Elasticsearch.Net.pdb.srcsrv",
+        "lib/netstandard1.3/Elasticsearch.Net.dll",
+        "lib/netstandard1.3/Elasticsearch.Net.pdb",
+        "lib/netstandard1.3/Elasticsearch.Net.pdb.srcsrv"
+      ]
+    },
     "Google.Protobuf/3.0.0": {
       "sha512": "l5CH4IoWys8hIQR53F+nM3RpFOX12Jj9iXVOh30ejoz0TRHApzvAHc+5T5mGnMWa/vCVfYFZkhqStn+IuK8+5g==",
       "type": "package",
@@ -4791,6 +4846,26 @@
         "lib/net451/MySql.Data.EntityFrameworkCore.xml",
         "lib/netstandard1.6/MySql.Data.EntityFrameworkCore.dll",
         "lib/netstandard1.6/MySql.Data.EntityFrameworkCore.xml"
+      ]
+    },
+    "NEST/2.4.5": {
+      "sha512": "EXoNhJ97Q6jyXrGxvA/DxnBEmc1mjVxygypmkx2lZ2CxTfluGUsUbkitxRW6tAbNKRZv7rT/JUnlfRBIohqdHw==",
+      "type": "package",
+      "path": "NEST/2.4.5",
+      "files": [
+        "NEST.2.4.5.nupkg.sha512",
+        "NEST.nuspec",
+        "lib/net45/Nest.XML",
+        "lib/net45/Nest.dll",
+        "lib/net45/Nest.pdb",
+        "lib/net45/Nest.pdb.srcsrv",
+        "lib/net46/Nest.XML",
+        "lib/net46/Nest.dll",
+        "lib/net46/Nest.pdb",
+        "lib/net46/Nest.pdb.srcsrv",
+        "lib/netstandard1.3/Nest.dll",
+        "lib/netstandard1.3/Nest.pdb",
+        "lib/netstandard1.3/Nest.pdb.srcsrv"
       ]
     },
     "NetMQ/4.0.0-rc5": {
@@ -10579,6 +10654,7 @@
       "MongoDB.Driver >= 2.3.0-rc1",
       "MongoDB.Driver.Core >= 2.3.0-rc1",
       "MySql.Data.EntityFrameworkCore >= 7.0.5-ir21",
+      "NEST >= 2.4.5",
       "NetMQ >= 4.0.0-rc5",
       "Newtonsoft.Json >= 9.0.1",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 1.0.1",
