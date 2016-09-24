@@ -515,24 +515,25 @@ Master in Information Technology Management
 
             // new FileStream("test.txt", FileMode.Create);
 
-            if (File.Exists("test.txt"))
-            {
-                using (var sr = new StreamReader(File.OpenRead("test.txt")))
-                {
-                    string newContent = sr.ReadLine();
-                    while (!sr.EndOfStream)
-                    {
-                        Console.WriteLine(newContent);
-                        newContent = sr.ReadLine();
-                    }
-                    Console.WriteLine(newContent);
-                }
+            // File Processing commands
+            // if (File.Exists("test.txt"))
+            // {
+            //     using (var sr = new StreamReader(File.OpenRead("test.txt")))
+            //     {
+            //         string newContent = sr.ReadLine();
+            //         while (!sr.EndOfStream)
+            //         {
+            //             Console.WriteLine(newContent);
+            //             newContent = sr.ReadLine();
+            //         }
+            //         Console.WriteLine(newContent);
+            //     }
 
-                using (var at = File.AppendText("test.txt"))
-                {
-                    at.Write($"{at.NewLine}Hello World");
-                }
-            }
+            //     using (var at = File.AppendText("test.txt"))
+            //     {
+            //         at.Write($"{at.NewLine}Hello World");
+            //     }
+            // }
 
             var sb = new StringBuilder("Piyush Chauhan");
             sb.Append(" | Age: 26");
