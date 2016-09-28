@@ -46,6 +46,30 @@
           "lib/netstandard1.3/AsyncIO.dll": {}
         }
       },
+      "CoreCompat.System.Drawing/1.0.0-beta006": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Win32.Primitives": "4.0.1",
+          "System.Collections.NonGeneric": "4.0.1",
+          "System.Collections.Specialized": "4.0.1",
+          "System.ComponentModel.TypeConverter": "4.1.0",
+          "System.Drawing.Primitives": "4.0.0",
+          "System.IO.FileSystem": "4.0.1",
+          "System.Reflection.TypeExtensions": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.0.0",
+          "System.Text.Encoding.Extensions": "4.0.11",
+          "System.Text.RegularExpressions": "4.1.0",
+          "System.Threading": "4.0.11"
+        },
+        "compile": {
+          "lib/netstandard1.3/CoreCompat.System.Drawing.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/CoreCompat.System.Drawing.dll": {}
+        }
+      },
       "CsvHelper/3.0.0-beta4": {
         "type": "package",
         "dependencies": {
@@ -1880,6 +1904,19 @@
         },
         "runtime": {
           "lib/portable-net45+win8+wpa81/_._": {}
+        }
+      },
+      "System.Drawing.Primitives/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.1/System.Drawing.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/System.Drawing.Primitives.dll": {}
         }
       },
       "System.Dynamic.Runtime/4.0.11": {
@@ -4052,6 +4089,17 @@
         "lib/net40/AsyncIO.dll",
         "lib/netstandard1.3/AsyncIO.dll",
         "lib/xamarinios10/AsyncIO.dll"
+      ]
+    },
+    "CoreCompat.System.Drawing/1.0.0-beta006": {
+      "sha512": "KOBeVy8FHx9zkXrIZAM8OdXPrimROmvfB02fOegrYIelNN/zWhsOwzONgD7gw7wOTJgAFfdwpme5CiMraJj47Q==",
+      "type": "package",
+      "path": "CoreCompat.System.Drawing/1.0.0-beta006",
+      "files": [
+        "CoreCompat.System.Drawing.1.0.0-beta006.nupkg.sha512",
+        "CoreCompat.System.Drawing.nuspec",
+        "lib/net45/CoreCompat.System.Drawing.dll",
+        "lib/netstandard1.3/CoreCompat.System.Drawing.dll"
       ]
     },
     "CsvHelper/3.0.0-beta4": {
@@ -6384,6 +6432,21 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._"
+      ]
+    },
+    "System.Drawing.Primitives/4.0.0": {
+      "sha512": "9lVRG1voBwzLGZkf1XFJrobdZDZ5ZHMU4FVTbXAbzehpN90yYgkUeo9GoEYdvkt/EXaaHZJAeuffXP4JBbY+Ig==",
+      "type": "package",
+      "path": "System.Drawing.Primitives/4.0.0",
+      "files": [
+        "System.Drawing.Primitives.4.0.0.nupkg.sha512",
+        "System.Drawing.Primitives.nuspec",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/net45/System.Drawing.Primitives.dll",
+        "lib/netstandard1.1/System.Drawing.Primitives.dll",
+        "ref/net45/System.Drawing.Primitives.dll",
+        "ref/netstandard1.1/System.Drawing.Primitives.dll"
       ]
     },
     "System.Dynamic.Runtime/4.0.11": {
@@ -10648,6 +10711,7 @@
   "projectFileDependencyGroups": {
     "": [
       "AMQPNetLite >= 1.2.0",
+      "CoreCompat.System.Drawing >= 1.0.0-beta006",
       "CsvHelper >= 3.0.0-beta4",
       "Microsoft.Reactive.Testing >= 3.0.0",
       "MongoDB.Bson >= 2.3.0-rc1",
