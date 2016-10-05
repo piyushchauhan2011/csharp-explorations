@@ -24,8 +24,7 @@
     "AMQPNetLite": "1.2.0",
     "RabbitMQ.Client": "4.1.0-rc2",
     "MySql.Data.EntityFrameworkCore": "7.0.5-ir21",
-    "NEST": "2.4.5",
-    "CoreCompat.System.Drawing": "1.0.0-beta006"
+    "NEST": "2.4.5"
   },
   "frameworks": {
     "netcoreapp1.0": {
