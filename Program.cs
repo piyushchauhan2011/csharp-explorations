@@ -30,6 +30,7 @@ using Amqp;
 using RabbitMQ.Client;
 using MySql.Data.MySqlClient;
 using Nest;
+using ImageProcessorCore;
 
 namespace ConsoleApplication
 {
@@ -624,6 +625,19 @@ Master in Information Technology Management
 
             //     conn.Close();
             // }
+            OpenImage();
+        }
+
+        static void OpenImage()
+        {
+            var f = File.OpenRead("piyush.jpg");
+            var output = File.OpenWrite("grayscale.jpg");
+            var image = new Image(f);
+            image
+                .Resize(image.Width / 2, image.Height / 2)
+                .Grayscale()
+                .Save(output);
+            Console.WriteLine(output.Name);
         }
 
         public static void DisplayBits(BitArray bits)
