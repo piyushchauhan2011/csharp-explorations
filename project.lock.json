@@ -46,7 +46,7 @@
           "lib/netstandard1.3/AsyncIO.dll": {}
         }
       },
-      "CsvHelper/3.0.0-beta4": {
+      "CsvHelper/3.0.0-beta7": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.0.1",
@@ -341,7 +341,7 @@
           "lib/netstandard1.5/Microsoft.DotNet.ProjectModel.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/1.0.0": {
+      "Microsoft.EntityFrameworkCore/1.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.Extensions.Caching.Memory": "1.0.0",
@@ -364,11 +364,11 @@
           "lib/netstandard1.3/Microsoft.EntityFrameworkCore.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/1.0.0": {
+      "Microsoft.EntityFrameworkCore.Relational/1.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.0.1",
-          "Microsoft.EntityFrameworkCore": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "1.0.1",
           "System.Data.Common": "4.1.0",
           "System.Diagnostics.DiagnosticSource": "4.0.0",
           "System.Text.RegularExpressions": "4.1.0"
@@ -841,7 +841,7 @@
           }
         }
       },
-      "MongoDB.Bson/2.3.0-rc1": {
+      "MongoDB.Bson/2.3.0": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.0",
@@ -857,11 +857,11 @@
           "lib/netstandard1.5/MongoDB.Bson.dll": {}
         }
       },
-      "MongoDB.Driver/2.3.0-rc1": {
+      "MongoDB.Driver/2.3.0": {
         "type": "package",
         "dependencies": {
-          "MongoDB.Bson": "2.3.0-rc1",
-          "MongoDB.Driver.Core": "2.3.0-rc1",
+          "MongoDB.Bson": "2.3.0",
+          "MongoDB.Driver.Core": "2.3.0",
           "NETStandard.Library": "1.6.0",
           "System.Linq.Queryable": "4.0.1"
         },
@@ -872,10 +872,10 @@
           "lib/netstandard1.5/MongoDB.Driver.dll": {}
         }
       },
-      "MongoDB.Driver.Core/2.3.0-rc1": {
+      "MongoDB.Driver.Core/2.3.0": {
         "type": "package",
         "dependencies": {
-          "MongoDB.Bson": "2.3.0-rc1",
+          "MongoDB.Bson": "2.3.0",
           "NETStandard.Library": "1.6.0",
           "System.Collections.Specialized": "4.0.1",
           "System.Diagnostics.TraceSource": "4.0.0",
@@ -1094,7 +1094,7 @@
           "lib/netstandard1.1/Ngonzalez.ImageProcessorCore.dll": {}
         }
       },
-      "Npgsql/3.1.5": {
+      "Npgsql/3.1.8": {
         "type": "package",
         "dependencies": {
           "Microsoft.Win32.Primitives": "4.0.1",
@@ -1124,20 +1124,20 @@
           "System.Threading.Timer": "4.0.1"
         },
         "compile": {
-          "lib/netstandard1.3/npgsql.dll": {}
+          "lib/netstandard1.3/Npgsql.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.3/npgsql.dll": {}
+          "lib/netstandard1.3/Npgsql.dll": {}
         }
       },
-      "Npgsql.EntityFrameworkCore.PostgreSQL/1.0.1": {
+      "Npgsql.EntityFrameworkCore.PostgreSQL/1.0.2": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "1.0.0",
-          "Microsoft.EntityFrameworkCore.Relational": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "1.0.1",
+          "Microsoft.EntityFrameworkCore.Relational": "1.0.1",
           "Microsoft.Extensions.DependencyInjection": "1.0.0",
           "Microsoft.Extensions.DependencyInjection.Abstractions": "1.0.0",
-          "Npgsql": "3.1.5"
+          "Npgsql": "3.1.8"
         },
         "compile": {
           "lib/netstandard1.3/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
@@ -1245,7 +1245,7 @@
           "lib/netstandard1.0/NuGet.Versioning.dll": {}
         }
       },
-      "RabbitMQ.Client/4.1.0-rc2": {
+      "RabbitMQ.Client/4.1.0": {
         "type": "package",
         "dependencies": {
           "System.Collections.Concurrent": "4.0.12",
@@ -1383,7 +1383,7 @@
           }
         }
       },
-      "StackExchange.Redis/1.1.605": {
+      "StackExchange.Redis/1.1.608": {
         "type": "package",
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -4094,12 +4094,12 @@
         "lib/xamarinios10/AsyncIO.dll"
       ]
     },
-    "CsvHelper/3.0.0-beta4": {
-      "sha512": "q0ktj61m+S2cRf7/zOVaSOBN2ZUhKxsydVAH4doEFxD1gvDs4Wlj3IdmZ5TtoXryc+sy6N6psRaznRWwcS821A==",
+    "CsvHelper/3.0.0-beta7": {
+      "sha512": "Bbpeo/4Zvrpe0M4UfVV3qc/C92EtHErbJ+inaRPLr72MMBbXKtvAAvymeOxoxqOjcx4zEgygcWt2CAomIXqmJg==",
       "type": "package",
-      "path": "CsvHelper/3.0.0-beta4",
+      "path": "CsvHelper/3.0.0-beta7",
       "files": [
-        "CsvHelper.3.0.0-beta4.nupkg.sha512",
+        "CsvHelper.3.0.0-beta7.nupkg.sha512",
         "CsvHelper.nuspec",
         "lib/net20/CsvHelper.dll",
         "lib/net20/CsvHelper.xml",
@@ -4109,6 +4109,8 @@
         "lib/net40/CsvHelper.xml",
         "lib/net45/CsvHelper.dll",
         "lib/net45/CsvHelper.xml",
+        "lib/net451/CsvHelper.dll",
+        "lib/net451/CsvHelper.xml",
         "lib/netstandard1.3/CsvHelper.dll",
         "lib/netstandard1.3/CsvHelper.xml",
         "lib/portable40-net40+sl5+win8+wp8+wpa81/CsvHelper.dll",
@@ -4353,12 +4355,12 @@
         "lib/netstandard1.5/Microsoft.DotNet.ProjectModel.dll"
       ]
     },
-    "Microsoft.EntityFrameworkCore/1.0.0": {
-      "sha512": "Vqg/v0cXRQZQH0gY3VHHqt0Bt5WZEkDReVpI1sNYKHVbVtnMYFKPp5SiNygosUJYrJk1rSGb8UVkplDNNUkEgg==",
+    "Microsoft.EntityFrameworkCore/1.0.1": {
+      "sha512": "bprn1t+6muzkNzh64Art4w20L1FKDFac/Tx4h+4d7Sd9ivRqAaec6MqU700CFo6h6CHjAjWeqzYjQFroCouECQ==",
       "type": "package",
-      "path": "Microsoft.EntityFrameworkCore/1.0.0",
+      "path": "Microsoft.EntityFrameworkCore/1.0.1",
       "files": [
-        "Microsoft.EntityFrameworkCore.1.0.0.nupkg.sha512",
+        "Microsoft.EntityFrameworkCore.1.0.1.nupkg.sha512",
         "Microsoft.EntityFrameworkCore.nuspec",
         "lib/net451/Microsoft.EntityFrameworkCore.dll",
         "lib/net451/Microsoft.EntityFrameworkCore.xml",
@@ -4366,12 +4368,12 @@
         "lib/netstandard1.3/Microsoft.EntityFrameworkCore.xml"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Relational/1.0.0": {
-      "sha512": "LGBab+7o0eq4C3YtvkAxK8W7Ia57eO0Ue0viQgt0STptQ2bUpLzV7q5LfbNl475rt6yTWa/vDQlYVaI64fwqdw==",
+    "Microsoft.EntityFrameworkCore.Relational/1.0.1": {
+      "sha512": "2LZ746BTMSoAHsqsxFAVYVzo/ziS682z2evAxDnwwg1Fw27MuxqEjl38YWz5OE1TchmtEPxWWVcup+sL6rjPXg==",
       "type": "package",
-      "path": "Microsoft.EntityFrameworkCore.Relational/1.0.0",
+      "path": "Microsoft.EntityFrameworkCore.Relational/1.0.1",
       "files": [
-        "Microsoft.EntityFrameworkCore.Relational.1.0.0.nupkg.sha512",
+        "Microsoft.EntityFrameworkCore.Relational.1.0.1.nupkg.sha512",
         "Microsoft.EntityFrameworkCore.Relational.nuspec",
         "lib/net451/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/net451/Microsoft.EntityFrameworkCore.Relational.xml",
@@ -4816,13 +4818,13 @@
         "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll"
       ]
     },
-    "MongoDB.Bson/2.3.0-rc1": {
-      "sha512": "u1IgFhqOW9A4QVRg5+0z2xv4CGDUMZyXp9t5Uvvjt6kN7ygx/bxlPJ8cRy0UY1MJUNRoB2ezTwyAmceF+o0SSg==",
+    "MongoDB.Bson/2.3.0": {
+      "sha512": "ImZ8Dstc+ZUxEqgIXJtFuL2+sesc+e0SwF68Wh8P3gSYLyWRL3hacNNgmE9iUgxUyYzVg4Sr55aRsHkHw9IaDw==",
       "type": "package",
-      "path": "MongoDB.Bson/2.3.0-rc1",
+      "path": "MongoDB.Bson/2.3.0",
       "files": [
         "License.rtf",
-        "MongoDB.Bson.2.3.0-rc1.nupkg.sha512",
+        "MongoDB.Bson.2.3.0.nupkg.sha512",
         "MongoDB.Bson.nuspec",
         "lib/net45/MongoDB.Bson.XML",
         "lib/net45/MongoDB.Bson.dll",
@@ -4830,13 +4832,13 @@
         "lib/netstandard1.5/MongoDB.Bson.xml"
       ]
     },
-    "MongoDB.Driver/2.3.0-rc1": {
-      "sha512": "RTtiYHsVkzDMMCoqITBlyZIdmrQK2UXfx2GUp3oQP5XM1ZDFy8qKgULCsdzgysrx/BEuTbfuZGankvBpnVM7cQ==",
+    "MongoDB.Driver/2.3.0": {
+      "sha512": "wq4rHgUorkGMn66TNQ4kDlh/u1DihK4bB+LdLgklP6Z7tpq3Y5It25daKrq6zcoLheCoBqhjBsKHUzrfG0KUfQ==",
       "type": "package",
-      "path": "MongoDB.Driver/2.3.0-rc1",
+      "path": "MongoDB.Driver/2.3.0",
       "files": [
         "License.rtf",
-        "MongoDB.Driver.2.3.0-rc1.nupkg.sha512",
+        "MongoDB.Driver.2.3.0.nupkg.sha512",
         "MongoDB.Driver.nuspec",
         "lib/net45/MongoDB.Driver.XML",
         "lib/net45/MongoDB.Driver.dll",
@@ -4844,13 +4846,13 @@
         "lib/netstandard1.5/MongoDB.Driver.xml"
       ]
     },
-    "MongoDB.Driver.Core/2.3.0-rc1": {
-      "sha512": "513knKw4KZiswMeUGe5IeHujGmw6HYLJWeOsGNk2TpGtrS94V+ZzaU298eyyZu8ZJJLaD7Y6asaCvvcIijeuWA==",
+    "MongoDB.Driver.Core/2.3.0": {
+      "sha512": "CaMUxfkDkTnRR5iQ/tlVRYtJyoUAl0ToSj9/fWfQb/GYt8veQzSqu6jOLE1+KT+2HMvL6kIhX08tam+xU+iycQ==",
       "type": "package",
-      "path": "MongoDB.Driver.Core/2.3.0-rc1",
+      "path": "MongoDB.Driver.Core/2.3.0",
       "files": [
         "License.rtf",
-        "MongoDB.Driver.Core.2.3.0-rc1.nupkg.sha512",
+        "MongoDB.Driver.Core.2.3.0.nupkg.sha512",
         "MongoDB.Driver.Core.nuspec",
         "lib/net45/MongoDB.Driver.Core.XML",
         "lib/net45/MongoDB.Driver.Core.dll",
@@ -4967,27 +4969,27 @@
         "lib/netstandard1.1/Ngonzalez.ImageProcessorCore.dll"
       ]
     },
-    "Npgsql/3.1.5": {
-      "sha512": "goxdRti9awLXumRiZh7Z2Lu6DQ0v6tEz+aPNfp2OjuxKCGIZYr/KmJ/Q9X+wRyGkzi0nzAacWZC5YAd5xSW6PA==",
+    "Npgsql/3.1.8": {
+      "sha512": "KkIIz4b4wQptzQsROXHv3dlnSfejuoSQ4I0a5BeRMLWCrxQ46pHPZIWBT/pJvb6i7wR2IYhw460d7Zq7IcYwWg==",
       "type": "package",
-      "path": "Npgsql/3.1.5",
+      "path": "Npgsql/3.1.8",
       "files": [
-        "Npgsql.3.1.5.nupkg.sha512",
+        "Npgsql.3.1.8.nupkg.sha512",
         "Npgsql.nuspec",
-        "lib/net45/npgsql.dll",
-        "lib/net45/npgsql.xml",
-        "lib/net451/npgsql.dll",
-        "lib/net451/npgsql.xml",
-        "lib/netstandard1.3/npgsql.dll",
-        "lib/netstandard1.3/npgsql.xml"
+        "lib/net45/Npgsql.dll",
+        "lib/net45/Npgsql.xml",
+        "lib/net451/Npgsql.dll",
+        "lib/net451/Npgsql.xml",
+        "lib/netstandard1.3/Npgsql.dll",
+        "lib/netstandard1.3/Npgsql.xml"
       ]
     },
-    "Npgsql.EntityFrameworkCore.PostgreSQL/1.0.1": {
-      "sha512": "PTRpXCaxSY2/+Z6s8e56v0xPy770MHfNWCZSm2aaczNIu7sn2d6qTX5QhIMWMcQUKDzLw8cPGrQsDipJ34cjWw==",
+    "Npgsql.EntityFrameworkCore.PostgreSQL/1.0.2": {
+      "sha512": "Tf/0TttWsgqsNs3a1m3G6aDWOBchpiLi2yJG7XooLX/KeP6W8xg5VWpeMtg2ogF3JzhLbDGSRVv8Z827uC4h4Q==",
       "type": "package",
-      "path": "Npgsql.EntityFrameworkCore.PostgreSQL/1.0.1",
+      "path": "Npgsql.EntityFrameworkCore.PostgreSQL/1.0.2",
       "files": [
-        "Npgsql.EntityFrameworkCore.PostgreSQL.1.0.1.nupkg.sha512",
+        "Npgsql.EntityFrameworkCore.PostgreSQL.1.0.2.nupkg.sha512",
         "Npgsql.EntityFrameworkCore.PostgreSQL.nuspec",
         "lib/net451/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
         "lib/netstandard1.3/Npgsql.EntityFrameworkCore.PostgreSQL.dll"
@@ -5084,12 +5086,12 @@
         "lib/netstandard1.0/NuGet.Versioning.xml"
       ]
     },
-    "RabbitMQ.Client/4.1.0-rc2": {
-      "sha512": "IJe7YwqKhlB7BKAEZk4UQKkjnX5c1V3nHAWr+78X5Hj9y33ITIXTDRiezT2J0ch53AXnBifOEMo9Oi2bVyt+Ng==",
+    "RabbitMQ.Client/4.1.0": {
+      "sha512": "kRSynszpUNVgklJWK211sWMPtTUufexmgXtOD90hsqgT9YLACL/cb3+SPbb6sy8MwweNt71TkQFjOVjX3B0NOQ==",
       "type": "package",
-      "path": "RabbitMQ.Client/4.1.0-rc2",
+      "path": "RabbitMQ.Client/4.1.0",
       "files": [
-        "RabbitMQ.Client.4.1.0-rc2.nupkg.sha512",
+        "RabbitMQ.Client.4.1.0.nupkg.sha512",
         "RabbitMQ.Client.nuspec",
         "lib/net451/RabbitMQ.Client.dll",
         "lib/netstandard1.5/RabbitMQ.Client.dll"
@@ -5209,12 +5211,12 @@
         "runtimes/win7-x86/native/sni.dll"
       ]
     },
-    "StackExchange.Redis/1.1.605": {
-      "sha512": "W+bVyzYtLBTGqU4v1+ByKeUGadXyPCq9R+IwgVqvIs/a+UsSSt9ZOaRowvk4oEGQZIt7aNC/d9KlrYVDEGyCKg==",
+    "StackExchange.Redis/1.1.608": {
+      "sha512": "SXorfrt0kXU1ueYRvdZcZ87da7o75j0LTrOtRD7xbD1b/AhnL9nTohmHfz4Ob7ENwf7ecxl1L3vmSET3nemz7w==",
       "type": "package",
-      "path": "StackExchange.Redis/1.1.605",
+      "path": "StackExchange.Redis/1.1.608",
       "files": [
-        "StackExchange.Redis.1.1.605.nupkg.sha512",
+        "StackExchange.Redis.1.1.608.nupkg.sha512",
         "StackExchange.Redis.nuspec",
         "lib/net40/StackExchange.Redis.dll",
         "lib/net40/StackExchange.Redis.xml",
@@ -10711,19 +10713,19 @@
   "projectFileDependencyGroups": {
     "": [
       "AMQPNetLite >= 1.2.0",
-      "CsvHelper >= 3.0.0-beta4",
+      "CsvHelper >= 3.0.0-*",
       "Microsoft.Reactive.Testing >= 3.0.0",
-      "MongoDB.Bson >= 2.3.0-rc1",
-      "MongoDB.Driver >= 2.3.0-rc1",
-      "MongoDB.Driver.Core >= 2.3.0-rc1",
-      "MySql.Data.EntityFrameworkCore >= 7.0.5-ir21",
+      "MongoDB.Bson >= 2.3.0",
+      "MongoDB.Driver >= 2.3.0",
+      "MongoDB.Driver.Core >= 2.3.0",
+      "MySql.Data.EntityFrameworkCore >= 7.0.5-*",
       "NEST >= 2.4.5",
-      "NetMQ >= 4.0.0-rc5",
+      "NetMQ >= 4.0.0-*",
       "Newtonsoft.Json >= 9.0.1",
       "Ngonzalez.ImageProcessorCore >= 1.0.0",
-      "Npgsql.EntityFrameworkCore.PostgreSQL >= 1.0.1",
-      "RabbitMQ.Client >= 4.1.0-rc2",
-      "StackExchange.Redis >= 1.1.605",
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 1.0.2",
+      "RabbitMQ.Client >= 4.1.0",
+      "StackExchange.Redis >= 1.1.608",
       "System.Reactive >= 3.0.0",
       "System.Reactive.Core >= 3.0.0",
       "System.Reactive.Interfaces >= 3.0.0",
