@@ -72,20 +72,6 @@
         },
         "runtime": {
           "lib/netcoreapp1.0/dotnet-test-xunit.dll": {}
-        },
-        "runtimeTargets": {
-          "runtimes/unix-x64/lib/net451/dotnet-test-xunit.exe": {
-            "assetType": "runtime",
-            "rid": "unix-x64"
-          },
-          "runtimes/win7-x64/lib/net451/dotnet-test-xunit.exe": {
-            "assetType": "runtime",
-            "rid": "win7-x64"
-          },
-          "runtimes/win7-x86/lib/net451/dotnet-test-xunit.exe": {
-            "assetType": "runtime",
-            "rid": "win7-x86"
-          }
         }
       },
       "Elasticsearch.Net/2.4.5": {
@@ -1712,9 +1698,6 @@
         "compile": {
           "ref/netstandard1.3/System.Data.SqlClient.dll": {}
         },
-        "runtime": {
-          "lib/net451/System.Data.SqlClient.dll": {}
-        },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard1.3/System.Data.SqlClient.dll": {
             "assetType": "runtime",
@@ -3131,9 +3114,6 @@
         "compile": {
           "ref/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {}
         },
-        "runtime": {
-          "lib/net45/System.Runtime.InteropServices.RuntimeInformation.dll": {}
-        },
         "runtimeTargets": {
           "runtimes/unix/lib/netstandard1.1/System.Runtime.InteropServices.RuntimeInformation.dll": {
             "assetType": "runtime",
@@ -3757,9 +3737,6 @@
         },
         "compile": {
           "ref/netstandard1.2/System.Threading.Timer.dll": {}
-        },
-        "runtime": {
-          "lib/net451/_._": {}
         }
       },
       "System.Xml.ReaderWriter/4.0.11": {

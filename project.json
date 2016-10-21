@@ -37,8 +37,7 @@
       },
       "imports": [
         "dnxcore50",
-        "portable-net45+win8",
-        "net452"
+        "portable-net45+win8"
       ]
     }
   },
