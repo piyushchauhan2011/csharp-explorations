@@ -5,36 +5,37 @@
     "emitEntryPoint": true
   },
   "dependencies": {
-    "xunit": "2.1.0",
-    "dotnet-test-xunit": "1.0.0-*",
+    "xunit": "2.2.0-*",
+    "dotnet-test-xunit": "2.2.0-*",
     "NetMQ": "4.0.0-*",
-    "System.Reactive": "3.0.0",
-    "System.Reactive.Core": "3.0.0",
-    "System.Reactive.Interfaces": "3.0.0",
-    "System.Reactive.Linq": "3.0.0",
-    "System.Reactive.PlatformServices": "3.0.0",
-    "Microsoft.Reactive.Testing": "3.0.0",
-    "MongoDB.Driver": "2.3.0",
-    "MongoDB.Driver.Core": "2.3.0",
-    "MongoDB.Bson": "2.3.0",
-    "Newtonsoft.Json": "9.0.1",
+    "System.Reactive": "3.1.0",
+    "System.Reactive.Core": "3.1.0",
+    "System.Reactive.Interfaces": "3.1.0",
+    "System.Reactive.Linq": "3.1.0",
+    "System.Reactive.PlatformServices": "3.1.0",
+    "Microsoft.Reactive.Testing": "3.1.0",
+    "MongoDB.Driver": "2.4.0-*",
+    "MongoDB.Driver.Core": "2.4.0-*",
+    "MongoDB.Bson": "2.4.0-*",
+    "Newtonsoft.Json": "9.0.2-*",
     "CsvHelper": "3.0.0-*",
     "StackExchange.Redis": "1.1.608",
     "Npgsql.EntityFrameworkCore.PostgreSQL": "1.0.2",
-    "AMQPNetLite": "1.2.0",
-    "RabbitMQ.Client": "4.1.0",
-    "MySql.Data.EntityFrameworkCore": "7.0.5-*",
-    "NEST": "2.4.5",
+    "AMQPNetLite": "1.2.1",
+    "RabbitMQ.Client": "4.1.1",
+    "MySql.Data.EntityFrameworkCore": "7.0.6-*",
+    "NEST": "2.4.6",
     "Ngonzalez.ImageProcessorCore": "1.0.0",
     "Microsoft.AspNet.SignalR.Server": "3.0.0-*",
-    "Microsoft.AspNetCore.WebSockets": "0.2.0-*"
+    "Microsoft.AspNetCore.WebSockets": "0.2.0-*",
+    "MyCouch": "4.0.0-*"
   },
   "frameworks": {
     "netcoreapp1.0": {
       "dependencies": {
         "Microsoft.NETCore.App": {
           "type": "platform",
-          "version": "1.0.1"
+          "version": "1.1.0"
         }
       },
       "imports": [
