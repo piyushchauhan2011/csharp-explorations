@@ -74,7 +74,7 @@
           "lib/netcoreapp1.0/dotnet-test-xunit.dll": {}
         }
       },
-      "Elasticsearch.Net/5.0.1": {
+      "Elasticsearch.Net/5.2.0": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.0.1",
@@ -1274,7 +1274,7 @@
           }
         }
       },
-      "MongoDB.Bson/2.4.1": {
+      "MongoDB.Bson/2.4.2": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.0",
@@ -1290,11 +1290,11 @@
           "lib/netstandard1.5/MongoDB.Bson.dll": {}
         }
       },
-      "MongoDB.Driver/2.4.1": {
+      "MongoDB.Driver/2.4.2": {
         "type": "package",
         "dependencies": {
-          "MongoDB.Bson": "2.4.1",
-          "MongoDB.Driver.Core": "2.4.1",
+          "MongoDB.Bson": "2.4.2",
+          "MongoDB.Driver.Core": "2.4.2",
           "NETStandard.Library": "1.6.0",
           "System.Linq.Queryable": "4.0.1"
         },
@@ -1305,10 +1305,10 @@
           "lib/netstandard1.5/MongoDB.Driver.dll": {}
         }
       },
-      "MongoDB.Driver.Core/2.4.1": {
+      "MongoDB.Driver.Core/2.4.2": {
         "type": "package",
         "dependencies": {
-          "MongoDB.Bson": "2.4.1",
+          "MongoDB.Bson": "2.4.2",
           "NETStandard.Library": "1.6.0",
           "System.Collections.Specialized": "4.0.1",
           "System.Diagnostics.TraceSource": "4.0.0",
@@ -1394,10 +1394,10 @@
           "lib/netstandard1.6/MySql.Data.EntityFrameworkCore.dll": {}
         }
       },
-      "NEST/5.0.1": {
+      "NEST/5.2.0": {
         "type": "package",
         "dependencies": {
-          "Elasticsearch.Net": "5.0.1",
+          "Elasticsearch.Net": "[5.2.0, 6.0.0)",
           "NETStandard.Library": "1.6.0",
           "Newtonsoft.Json": "[9.0.0, 10.0.0)",
           "System.Collections.Specialized": "4.0.1",
@@ -1478,12 +1478,11 @@
           "System.Xml.XDocument": "4.3.0"
         }
       },
-      "Newtonsoft.Json/9.0.2-beta2": {
+      "Newtonsoft.Json/9.0.1": {
         "type": "package",
         "dependencies": {
           "Microsoft.CSharp": "4.0.1",
           "System.Collections": "4.0.11",
-          "System.ComponentModel.TypeConverter": "4.1.0",
           "System.Diagnostics.Debug": "4.0.11",
           "System.Dynamic.Runtime": "4.0.11",
           "System.Globalization": "4.0.11",
@@ -1496,7 +1495,6 @@
           "System.Resources.ResourceManager": "4.0.1",
           "System.Runtime": "4.1.0",
           "System.Runtime.Extensions": "4.1.0",
-          "System.Runtime.Numerics": "4.0.1",
           "System.Runtime.Serialization.Primitives": "4.1.1",
           "System.Text.Encoding": "4.0.11",
           "System.Text.Encoding.Extensions": "4.0.11",
@@ -1507,10 +1505,10 @@
           "System.Xml.XDocument": "4.0.11"
         },
         "compile": {
-          "lib/netstandard1.1/Newtonsoft.Json.dll": {}
+          "lib/netstandard1.0/Newtonsoft.Json.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.1/Newtonsoft.Json.dll": {}
+          "lib/netstandard1.0/Newtonsoft.Json.dll": {}
         }
       },
       "Ngonzalez.ImageProcessorCore/1.0.0": {
@@ -1963,7 +1961,7 @@
           }
         }
       },
-      "StackExchange.Redis/1.2.0": {
+      "StackExchange.Redis/1.2.1": {
         "type": "package",
         "dependencies": {
           "System.Collections": "4.0.11",
@@ -4517,11 +4515,11 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
-      "xunit/2.2.0-beta5-build3474": {
+      "xunit/2.2.0": {
         "type": "package",
         "dependencies": {
-          "xunit.assert": "[2.2.0-beta5-build3474]",
-          "xunit.core": "[2.2.0-beta5-build3474]"
+          "xunit.assert": "[2.2.0]",
+          "xunit.core": "[2.2.0]"
         }
       },
       "xunit.abstractions/2.0.1": {
@@ -4536,49 +4534,49 @@
           "lib/netstandard1.0/xunit.abstractions.dll": {}
         }
       },
-      "xunit.assert/2.2.0-beta5-build3474": {
+      "xunit.assert/2.2.0": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.0"
         },
         "compile": {
-          "lib/netstandard1.0/xunit.assert.dll": {}
+          "lib/netstandard1.1/xunit.assert.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.0/xunit.assert.dll": {}
+          "lib/netstandard1.1/xunit.assert.dll": {}
         }
       },
-      "xunit.core/2.2.0-beta5-build3474": {
+      "xunit.core/2.2.0": {
         "type": "package",
         "dependencies": {
-          "xunit.extensibility.core": "[2.2.0-beta5-build3474]",
-          "xunit.extensibility.execution": "[2.2.0-beta5-build3474]"
+          "xunit.extensibility.core": "[2.2.0]",
+          "xunit.extensibility.execution": "[2.2.0]"
         }
       },
-      "xunit.extensibility.core/2.2.0-beta5-build3474": {
+      "xunit.extensibility.core/2.2.0": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.0",
           "xunit.abstractions": "2.0.1"
         },
         "compile": {
-          "lib/netstandard1.0/xunit.core.dll": {}
+          "lib/netstandard1.1/xunit.core.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.0/xunit.core.dll": {}
+          "lib/netstandard1.1/xunit.core.dll": {}
         }
       },
-      "xunit.extensibility.execution/2.2.0-beta5-build3474": {
+      "xunit.extensibility.execution/2.2.0": {
         "type": "package",
         "dependencies": {
           "NETStandard.Library": "1.6.0",
-          "xunit.extensibility.core": "[2.2.0-beta5-build3474]"
+          "xunit.extensibility.core": "[2.2.0]"
         },
         "compile": {
-          "lib/netstandard1.0/xunit.execution.dotnet.dll": {}
+          "lib/netstandard1.1/xunit.execution.dotnet.dll": {}
         },
         "runtime": {
-          "lib/netstandard1.0/xunit.execution.dotnet.dll": {}
+          "lib/netstandard1.1/xunit.execution.dotnet.dll": {}
         }
       },
       "xunit.runner.reporters/2.2.0-beta2-build3300": {
@@ -4721,12 +4719,12 @@
         "runtimes/win7-x86/lib/net451/dotnet-test-xunit.exe"
       ]
     },
-    "Elasticsearch.Net/5.0.1": {
-      "sha512": "4/DC0Obx/E7uj7O3oUOhGFgL/tjeipG8YoKaN/sRuzmpNFnhrQk9UlkefQY4606cbHEQtks6TrM+5kMqHDLICg==",
+    "Elasticsearch.Net/5.2.0": {
+      "sha512": "OzXGzu2pm7tA0tGT4DIziZlZduYwUa9TkZ4cxb40p4y+9884wUQVC84eJjw6YVJ4qaBROdjn6/1mehQ3YyTWTQ==",
       "type": "package",
-      "path": "Elasticsearch.Net/5.0.1",
+      "path": "Elasticsearch.Net/5.2.0",
       "files": [
-        "Elasticsearch.Net.5.0.1.nupkg.sha512",
+        "Elasticsearch.Net.5.2.0.nupkg.sha512",
         "Elasticsearch.Net.nuspec",
         "lib/net45/Elasticsearch.Net.XML",
         "lib/net45/Elasticsearch.Net.dll",
@@ -4738,7 +4736,8 @@
         "lib/net46/Elasticsearch.Net.pdb.srcsrv",
         "lib/netstandard1.3/Elasticsearch.Net.dll",
         "lib/netstandard1.3/Elasticsearch.Net.pdb",
-        "lib/netstandard1.3/Elasticsearch.Net.pdb.srcsrv"
+        "lib/netstandard1.3/Elasticsearch.Net.pdb.srcsrv",
+        "lib/netstandard1.3/Elasticsearch.Net.xml"
       ]
     },
     "Google.Protobuf/3.0.0": {
@@ -5758,13 +5757,13 @@
         "runtimes/win/lib/netstandard1.3/Microsoft.Win32.Registry.dll"
       ]
     },
-    "MongoDB.Bson/2.4.1": {
-      "sha512": "D6GBX2shpGGlQbIw8GIPYqvBsHvdtyFl/Gg16WmLUVXAUJnPYTivEsOoThs7vx0Uco425B/rr9pP7RHHz5xNQg==",
+    "MongoDB.Bson/2.4.2": {
+      "sha512": "Js7RLGX9TZJ5s0y6iWWZ9lMjKMGD9KE3L/QB74Og6QB+MIirMWKrw+YQuQ6GsXcQ7wY0rSdYoA/i+RbVMgsRPQ==",
       "type": "package",
-      "path": "MongoDB.Bson/2.4.1",
+      "path": "MongoDB.Bson/2.4.2",
       "files": [
         "License.rtf",
-        "MongoDB.Bson.2.4.1.nupkg.sha512",
+        "MongoDB.Bson.2.4.2.nupkg.sha512",
         "MongoDB.Bson.nuspec",
         "lib/net45/MongoDB.Bson.XML",
         "lib/net45/MongoDB.Bson.dll",
@@ -5772,13 +5771,13 @@
         "lib/netstandard1.5/MongoDB.Bson.xml"
       ]
     },
-    "MongoDB.Driver/2.4.1": {
-      "sha512": "xsp1BIr9WvvaGDIQFCQvty0ZAUl4WBj3DgvToleuljeYFa+W2d6nIMgAEKsUTuu2nC+3pNtVFbrKsryNU46+ag==",
+    "MongoDB.Driver/2.4.2": {
+      "sha512": "7Dy8fNXKHURJ0O1kRqplYbT8jRTxcydq07B/xXemSoo59uFSQMj5r3xRyUMGnqCpZJObi0Effp4CqIIJ0bSP6Q==",
       "type": "package",
-      "path": "MongoDB.Driver/2.4.1",
+      "path": "MongoDB.Driver/2.4.2",
       "files": [
         "License.rtf",
-        "MongoDB.Driver.2.4.1.nupkg.sha512",
+        "MongoDB.Driver.2.4.2.nupkg.sha512",
         "MongoDB.Driver.nuspec",
         "lib/net45/MongoDB.Driver.XML",
         "lib/net45/MongoDB.Driver.dll",
@@ -5786,13 +5785,13 @@
         "lib/netstandard1.5/MongoDB.Driver.xml"
       ]
     },
-    "MongoDB.Driver.Core/2.4.1": {
-      "sha512": "iJ020RGVzCm6h72qKF155XRQhx/D5xKOh9Z5MBTpFlr2ndGTSpskycPPCeNrjl/TSr1RBNg2+K03kzFD5xCu/Q==",
+    "MongoDB.Driver.Core/2.4.2": {
+      "sha512": "BAqf3xxpZxbtM3n/iQf6ilZSxbQzPkp2sjVSECqPLJq6Qgi6q/glt/297XBexzn6wXloM0rj5eGSel5pQGJJGA==",
       "type": "package",
-      "path": "MongoDB.Driver.Core/2.4.1",
+      "path": "MongoDB.Driver.Core/2.4.2",
       "files": [
         "License.rtf",
-        "MongoDB.Driver.Core.2.4.1.nupkg.sha512",
+        "MongoDB.Driver.Core.2.4.2.nupkg.sha512",
         "MongoDB.Driver.Core.nuspec",
         "lib/net45/MongoDB.Driver.Core.XML",
         "lib/net45/MongoDB.Driver.Core.dll",
@@ -5847,12 +5846,12 @@
         "lib/netstandard1.6/MySql.Data.EntityFrameworkCore.xml"
       ]
     },
-    "NEST/5.0.1": {
-      "sha512": "+vex/9JkTWH8IgnD3LdRYvFb/eNRhneo3Idwzzm/1zH+1WisQUW1x8k6qFe1VOegwhCEzpn0teUtvhHGQtmJ9w==",
+    "NEST/5.2.0": {
+      "sha512": "TOu4j6D6YZdcreeqzLJoiDu6f2jt8QniH2vSTgy5Gamt+hLfMtYlnfz4xKnNESYrRsMt/BE2DkUNmrJznnEHtA==",
       "type": "package",
-      "path": "NEST/5.0.1",
+      "path": "NEST/5.2.0",
       "files": [
-        "NEST.5.0.1.nupkg.sha512",
+        "NEST.5.2.0.nupkg.sha512",
         "NEST.nuspec",
         "lib/net45/Nest.XML",
         "lib/net45/Nest.dll",
@@ -5864,7 +5863,8 @@
         "lib/net46/Nest.pdb.srcsrv",
         "lib/netstandard1.3/Nest.dll",
         "lib/netstandard1.3/Nest.pdb",
-        "lib/netstandard1.3/Nest.pdb.srcsrv"
+        "lib/netstandard1.3/Nest.pdb.srcsrv",
+        "lib/netstandard1.3/Nest.xml"
       ]
     },
     "NetMQ/4.0.0-rc5": {
@@ -5892,12 +5892,12 @@
         "dotnet_library_license.txt"
       ]
     },
-    "Newtonsoft.Json/9.0.2-beta2": {
-      "sha512": "g29gt1Ux5izsximmPpsNf0NAcO/Pl8FA0uRzTxINPINwXJ8+QjzdGLIa2gf0/tGNclxHj5QGek1/tu6Ghc9Gcg==",
+    "Newtonsoft.Json/9.0.1": {
+      "sha512": "U82mHQSKaIk+lpSVCbWYKNavmNH1i5xrExDEquU1i6I5pV6UMOqRnJRSlKO3cMPfcpp0RgDY+8jUXHdQ4IfXvw==",
       "type": "package",
-      "path": "Newtonsoft.Json/9.0.2-beta2",
+      "path": "Newtonsoft.Json/9.0.1",
       "files": [
-        "Newtonsoft.Json.9.0.2-beta2.nupkg.sha512",
+        "Newtonsoft.Json.9.0.1.nupkg.sha512",
         "Newtonsoft.Json.nuspec",
         "lib/net20/Newtonsoft.Json.dll",
         "lib/net20/Newtonsoft.Json.xml",
@@ -5909,8 +5909,6 @@
         "lib/net45/Newtonsoft.Json.xml",
         "lib/netstandard1.0/Newtonsoft.Json.dll",
         "lib/netstandard1.0/Newtonsoft.Json.xml",
-        "lib/netstandard1.1/Newtonsoft.Json.dll",
-        "lib/netstandard1.1/Newtonsoft.Json.xml",
         "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.dll",
         "lib/portable-net40+sl5+wp80+win8+wpa81/Newtonsoft.Json.xml",
         "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll",
@@ -6330,12 +6328,12 @@
         "runtimes/win7-x86/native/sni.dll"
       ]
     },
-    "StackExchange.Redis/1.2.0": {
-      "sha512": "RXi3cs12LsEVZoPW2RnHEkiKoRw8aCivJUi4JFbW6ym6OaANkoJq/BRrorb3XBHsCMfoyOm3PGMuAGibll6FbA==",
+    "StackExchange.Redis/1.2.1": {
+      "sha512": "ZbvibTtEQ7HbrAbGxWEJ7NPUkxE2FmbpfMJXfecPnmmAyBzDA+Ut+m/bjw2vE5Ll5CNGZkB+bpLkW53lWcMjRQ==",
       "type": "package",
-      "path": "StackExchange.Redis/1.2.0",
+      "path": "StackExchange.Redis/1.2.1",
       "files": [
-        "StackExchange.Redis.1.2.0.nupkg.sha512",
+        "StackExchange.Redis.1.2.1.nupkg.sha512",
         "StackExchange.Redis.nuspec",
         "lib/net40/StackExchange.Redis.dll",
         "lib/net40/StackExchange.Redis.xml",
@@ -11792,12 +11790,12 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "xunit/2.2.0-beta5-build3474": {
-      "sha512": "nkcTT3ClVVoSaGkbyuYDhDo+WmhvwsAQOMpk/j19YJQwe9pRPh8BeZgysdOuCyQ8eeiWEEBxHsq7A+9AklZnOA==",
+    "xunit/2.2.0": {
+      "sha512": "DoB9o+x3erv1DGP+pSvrIC1pWg+23LeeG8nOGVldoF+qeWNqQbabc5jLfUWW4zLOsNZfvgHcmJIKuRcZMgoV+w==",
       "type": "package",
-      "path": "xunit/2.2.0-beta5-build3474",
+      "path": "xunit/2.2.0",
       "files": [
-        "xunit.2.2.0-beta5-build3474.nupkg.sha512",
+        "xunit.2.2.0.nupkg.sha512",
         "xunit.nuspec"
       ]
     },
@@ -11814,65 +11812,53 @@
         "xunit.abstractions.nuspec"
       ]
     },
-    "xunit.assert/2.2.0-beta5-build3474": {
-      "sha512": "l4HNVTFaVfAEwAZs7VjAlxb7DW6QkoGYoh0QaCB397IYBX/vZdJ5AhqrxmtcNSFbh0RwrXrKmI48JN+LUV1rdA==",
+    "xunit.assert/2.2.0": {
+      "sha512": "OZ1HADp3tv48wK+mPxdOr4kYPn3Y1RACYCWkX0IogKIyZ8fwLeLspVk9KdHfhqXGITnTvlMcOw6PmdRAwrUreQ==",
       "type": "package",
-      "path": "xunit.assert/2.2.0-beta5-build3474",
+      "path": "xunit.assert/2.2.0",
       "files": [
-        "lib/netstandard1.0/xunit.assert.dll",
-        "lib/netstandard1.0/xunit.assert.pdb",
-        "lib/netstandard1.0/xunit.assert.xml",
-        "xunit.assert.2.2.0-beta5-build3474.nupkg.sha512",
+        "lib/netstandard1.1/xunit.assert.dll",
+        "lib/netstandard1.1/xunit.assert.xml",
+        "xunit.assert.2.2.0.nupkg.sha512",
         "xunit.assert.nuspec"
       ]
     },
-    "xunit.core/2.2.0-beta5-build3474": {
-      "sha512": "DcOHVkAwkP5jp9I60uEBOOmkJ7Aocg7TYBw8+nEgcBUoR4Smb66RaYQuzkW1BCq/5xY0kQMRiJrIzuk3XPx2XA==",
+    "xunit.core/2.2.0": {
+      "sha512": "wuGOHofSt4sR/ros6N6S8FI2L9uuP5YsbcxM2kXpcRplMoY1pSgfEZaIRZm3NqDL/JJ/FHEksTEYkvxpc9H4Rw==",
       "type": "package",
-      "path": "xunit.core/2.2.0-beta5-build3474",
+      "path": "xunit.core/2.2.0",
       "files": [
         "build/_desktop/xunit.execution.desktop.dll",
         "build/netstandard1.0/_._",
         "build/uap10.0/xunit.core.props",
-        "build/win81/xunit.core.props",
-        "build/wpa81/xunit.core.props",
-        "xunit.core.2.2.0-beta5-build3474.nupkg.sha512",
+        "xunit.core.2.2.0.nupkg.sha512",
         "xunit.core.nuspec"
       ]
     },
-    "xunit.extensibility.core/2.2.0-beta5-build3474": {
-      "sha512": "G1s2W/DYEf2xVxItEdEL51e81Epc0TB/vAZ+9/Vp30/wUTP9Fgt9cb+DfuhGTvcppGW8uVXybpkMA9o/KI5Rrg==",
+    "xunit.extensibility.core/2.2.0": {
+      "sha512": "2bT3sG8obWbRm45NewcV+Sr2K1whj88LnjQT7szJx1DcydgKR86ggV5rIZ5NccCWo2ctZMRb0QMYttVrhrG9Gw==",
       "type": "package",
-      "path": "xunit.extensibility.core/2.2.0-beta5-build3474",
+      "path": "xunit.extensibility.core/2.2.0",
       "files": [
-        "lib/net45/xunit.core.dll",
-        "lib/net45/xunit.core.dll.tdnet",
-        "lib/net45/xunit.core.pdb",
-        "lib/net45/xunit.core.xml",
-        "lib/net45/xunit.runner.tdnet.dll",
-        "lib/net45/xunit.runner.utility.desktop.dll",
-        "lib/netstandard1.0/xunit.core.dll",
-        "lib/netstandard1.0/xunit.core.dll.tdnet",
-        "lib/netstandard1.0/xunit.core.pdb",
-        "lib/netstandard1.0/xunit.core.xml",
-        "lib/netstandard1.0/xunit.runner.tdnet.dll",
-        "lib/netstandard1.0/xunit.runner.utility.desktop.dll",
-        "xunit.extensibility.core.2.2.0-beta5-build3474.nupkg.sha512",
+        "lib/netstandard1.1/xunit.core.dll",
+        "lib/netstandard1.1/xunit.core.dll.tdnet",
+        "lib/netstandard1.1/xunit.core.xml",
+        "lib/netstandard1.1/xunit.runner.tdnet.dll",
+        "lib/netstandard1.1/xunit.runner.utility.net452.dll",
+        "xunit.extensibility.core.2.2.0.nupkg.sha512",
         "xunit.extensibility.core.nuspec"
       ]
     },
-    "xunit.extensibility.execution/2.2.0-beta5-build3474": {
-      "sha512": "LLIrjFggA2dl7HsJqsJCRcZjrRjIYsu5dRERNqWx2J61OeKdwlIsEj1i/D7DprMJUOIS6+MqRGo5htuQKdUm2A==",
+    "xunit.extensibility.execution/2.2.0": {
+      "sha512": "4gjTrSUd/F6/pdsMsf+a1f1tcaUQnr59JvZQulmF8VwQbCh34ifie3iqriYyKyLmTQDUEJ/ZTPeZEDh0pxpTLA==",
       "type": "package",
-      "path": "xunit.extensibility.execution/2.2.0-beta5-build3474",
+      "path": "xunit.extensibility.execution/2.2.0",
       "files": [
-        "lib/net45/xunit.execution.desktop.dll",
-        "lib/net45/xunit.execution.desktop.pdb",
-        "lib/net45/xunit.execution.desktop.xml",
-        "lib/netstandard1.0/xunit.execution.dotnet.dll",
-        "lib/netstandard1.0/xunit.execution.dotnet.pdb",
-        "lib/netstandard1.0/xunit.execution.dotnet.xml",
-        "xunit.extensibility.execution.2.2.0-beta5-build3474.nupkg.sha512",
+        "lib/net452/xunit.execution.desktop.dll",
+        "lib/net452/xunit.execution.desktop.xml",
+        "lib/netstandard1.1/xunit.execution.dotnet.dll",
+        "lib/netstandard1.1/xunit.execution.dotnet.xml",
+        "xunit.extensibility.execution.2.2.0.nupkg.sha512",
         "xunit.extensibility.execution.nuspec"
       ]
     },
@@ -11913,18 +11899,18 @@
       "Microsoft.AspNet.SignalR.Server >= 3.0.0-*",
       "Microsoft.AspNetCore.WebSockets >= 1.0.0",
       "Microsoft.Reactive.Testing >= 3.1.1",
-      "MongoDB.Bson >= 2.4.1",
-      "MongoDB.Driver >= 2.4.1",
-      "MongoDB.Driver.Core >= 2.4.1",
+      "MongoDB.Bson >= 2.4.2",
+      "MongoDB.Driver >= 2.4.2",
+      "MongoDB.Driver.Core >= 2.4.2",
       "MyCouch >= 4.0.0",
       "MySql.Data.EntityFrameworkCore >= 7.0.6-*",
-      "NEST >= 5.0.1",
+      "NEST >= 5.2.0",
       "NetMQ >= 4.0.0-*",
-      "Newtonsoft.Json >= 9.0.2-*",
+      "Newtonsoft.Json >= 9.0.1",
       "Ngonzalez.ImageProcessorCore >= 1.0.0",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 1.1.0",
       "RabbitMQ.Client >= 4.1.1",
-      "StackExchange.Redis >= 1.2.0",
+      "StackExchange.Redis >= 1.2.1",
       "System.Reactive >= 3.1.1",
       "System.Reactive.Core >= 3.1.1",
       "System.Reactive.Interfaces >= 3.1.1",
