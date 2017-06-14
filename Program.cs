@@ -31,6 +31,7 @@ using RabbitMQ.Client;
 using MySql.Data.MySqlClient;
 using Nest;
 using ImageProcessorCore;
+// using System.Drawing;
 
 namespace ConsoleApplication
 {
@@ -252,6 +253,47 @@ namespace ConsoleApplication
                     )
                 );
         }
+
+        // CoreCompact -> System.Drawing
+        // static void DrawingTest() {
+        //     const int size = 150;
+        //     const int quality = 75;
+
+        //     using (var image = new Bitmap(System.Drawing.Image.FromFile("piyush.jpg")))
+        //     {
+        //         int width, height;
+        //         if (image.Width > image.Height)
+        //         {
+        //             width = size;
+        //             height = Convert.ToInt32(image.Height * size / (double)image.Width);
+        //         }
+        //         else
+        //         {
+        //             width = Convert.ToInt32(image.Width * size / (double)image.Height);
+        //             height = size;
+        //         }
+        //         var resized = new Bitmap(width, height);
+        //         Console.WriteLine(resized);
+        //         Console.WriteLine(resized.Size.ToJson());
+        //         using (var graphics = Graphics.FromImage(resized))
+        //         {
+        //             graphics.CompositingQuality = CompositingQuality.HighSpeed;
+        //             graphics.InterpolationMode = InterpolationMode.HighQualityBicubic;
+        //             graphics.CompositingMode = CompositingMode.SourceCopy;
+        //             graphics.DrawImage(image, 0, 0, width, height);
+        //             Console.WriteLine(graphics);
+        //             using (var output = File.Open("drawing.jpg", FileMode.Create))
+        //             {
+        //                 var qualityParamId = Encoder.Quality;
+        //                 var encoderParameters = new EncoderParameters(1);
+        //                 encoderParameters.Param[0] = new EncoderParameter(qualityParamId, quality);
+        //                 var codec = ImageCodecInfo.GetImageDecoders()
+        //                     .FirstOrDefault(codec => codec.FormatID == ImageFormat.Jpeg.Guid);
+        //                 resized.Save(output, codec, encoderParameters);
+        //             }
+        //         }
+        //     }
+        // }
 
         public static void Main(string[] args)
         {
@@ -626,13 +668,15 @@ Master in Information Technology Management
             //     conn.Close();
             // }
             OpenImage();
+
+            // DrawingTest();
         }
 
         static void OpenImage()
         {
             var f = File.OpenRead("piyush.jpg");
             var output = File.OpenWrite("grayscale.jpg");
-            var image = new Image(f);
+            var image = new ImageProcessorCore.Image(f);
             image
                 .Resize(image.Width / 2, image.Height / 2)
                 .Grayscale()

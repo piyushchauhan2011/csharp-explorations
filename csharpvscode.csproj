@@ -33,6 +33,8 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0-*" />
     <PackageReference Include="xunit" Version="2.2.0-*" />
     <PackageReference Include="xunit.runner.visualstudio" Version="2.2.0-*" />
+    <!--<PackageReference Include="CoreCompat.System.Drawing" Version="1.0.0-*" />-->
+    <!--<PackageReference Include="runtime.osx.10.10-x64.CoreCompat.System.Drawing" Version="1.0.1-*" />-->
   </ItemGroup>
 
 </Project>
