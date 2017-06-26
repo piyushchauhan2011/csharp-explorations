@@ -32,6 +32,9 @@ using MySql.Data.MySqlClient;
 using Nest;
 using ImageProcessorCore;
 // using System.Drawing;
+using GraphQL;
+using GraphQL.Http;
+using GraphQL.Types;
 
 namespace ConsoleApplication
 {
@@ -670,6 +673,58 @@ Master in Information Technology Management
             OpenImage();
 
             // DrawingTest();
+
+            GraphQLTest();
+        }
+
+        static async void GraphQLTest()
+        {
+            Console.WriteLine("Hello GraphQL");
+
+            var schema = new Schema { Query = new StarWarsQuery() };
+
+            var result = await new DocumentExecuter().ExecuteAsync( _ =>
+            {
+                _.Schema = schema;
+                _.Query = @"
+                    query {
+                        hero {
+                            id
+                            name
+                        }
+                    }
+                ";
+            }).ConfigureAwait(false);
+
+            var json = new DocumentWriter(indent: true).Write(result);
+
+            Console.WriteLine(json);
+        }
+
+        class StarWarsQuery : ObjectGraphType
+        {
+            public StarWarsQuery()
+            {
+                Field<DroidType>(
+                    "hero",
+                    resolve: context => new Droid { Id = "1", Name = "R2 - D2" }
+                );
+            }
+        }
+
+        class Droid
+        {
+            public string Id { get; set; }
+            public string Name { get; set; }
+        }
+
+        class DroidType : ObjectGraphType<Droid>
+        {
+            public DroidType()
+            {
+                Field(x => x.Id).Description("The Id of the Droid.");
+                Field(x => x.Name, nullable: true).Description("The name of the Droid.");
+            }
         }
 
         static void OpenImage()
